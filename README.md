@@ -66,42 +66,30 @@ Pendekatan *online learning* memungkinkan model diperbarui secara bertahap ketik
 
 Implementasi dan eksperimen yang dilakukan mengikuti metode serta tahapan yang tercantum dalam notebook utama.
 
+
 ## Tahapan Pengolahan dan Analisis
 
-Secara umum, alur pengerjaan proyek meliputi:
+Secara umum, proses pengerjaan proyek dilakukan melalui beberapa tahapan pengolahan data, eksplorasi, analisis, hingga dokumentasi hasil. Alur tersebut digambarkan dalam flowchart berikut:
 
-```text
-Dataset
-   |
-   v
-Data Loading
-   |
-   v
-Data Inspection
-   |
-   v
-Data Cleaning
-   |
-   v
-Missing Values Analysis
-   |
-   v
-Descriptive Statistics
-   |
-   v
-Time Series Exploration
-   |
-   v
-Stream Mining dan Online Learning
-   |
-   v
-Visualisasi dan Analisis
-   |
-   v
-Dokumentasi Hasil
+```mermaid
+flowchart TD
+    A([Dataset]) --> B[Data Loading]
+    B --> C[Data Inspection]
+    C --> D[Data Cleaning]
+    D --> E[Missing Values Analysis]
+    E --> F[Descriptive Statistics]
+    F --> G[Time Series Exploration]
+    G --> H[Stream Mining dan Online Learning]
+    H --> I[Visualisasi dan Analisis]
+    I --> J[Dokumentasi Hasil]
+    J --> K([End])
+
+    classDef startEnd fill:#dbeafe,stroke:#2563eb,color:#1e3a8a,stroke-width:2px
+    classDef process fill:#f0fdf4,stroke:#16a34a,color:#14532d,stroke-width:1px
+
+    class A,K startEnd
+    class B,C,D,E,F,G,H,I,J process
 ```
-
-Tahapan tersebut menggambarkan alur umum pengolahan data. Detail implementasi, metode, dan eksperimen mengikuti kode yang terdapat dalam notebook.
 
 ## Cara Menjalankan Notebook
 
